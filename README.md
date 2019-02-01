@@ -12,6 +12,7 @@ corresponding C# fixtures. The intention is that the root folder of this repo be
 7. Start FitNesse with the root repo folder as the data folder, and the assembly folder as the current directory:
 
 	cd /D C:\Data\FitNesseDemo\ExtendedMath\ExtendedMathTest\bin\debug
+	
 	java -jar C:\Apps\FitNesse\fitnesse-standalone.jar -d C:\Data\FitNesseDemo
 	
 8. Open a browser and enter the URL http://localhost:8080/FibonacciTest?test
