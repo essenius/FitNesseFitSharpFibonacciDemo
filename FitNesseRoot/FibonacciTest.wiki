@@ -1,0 +1,17 @@
+!path "ExtendedMathTest.dll"
+
+!| import        |
+|ExtendedMathTest|
+
+|Fibonacci Fixture                                                                      |
+|Input Value|Fibonacci?                        |#comment                                |
+|0          |0                                 |by definition                           |
+|1          |1                                 |by definition                           |
+|2          |1                                 |Fibonacci(0) + Fibonacci(1)             |
+|8          |21                                |Fibonacci(6) + Fibonacci(7)             |
+|20         |6765                              |Fibonacci(18) + Fibonacci(19)           |
+|46         |1836311903                        |Largest result that fits in C# Int32    |
+|47         |System.OverflowException          |Result doesn't fit in Int32             |
+|-1         |System.ArgumentOutOfRangeException|Cannot handle negative Fibonacci numbers|
+
+Entering non-numerical input values will raise an exception in !-FitSharp-!, because the fixture expects an int, and it will then fail the test. If you want to cover testing of non-numerical arguments, change the fixture to allow strings for the input value.
