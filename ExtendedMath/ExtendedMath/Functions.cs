@@ -1,4 +1,4 @@
-﻿// Copyright 2013-2019 Rik Essenius
+﻿// Copyright 2013-2020 Rik Essenius
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License. You may obtain a copy of the License at
 //
@@ -14,15 +14,20 @@ namespace ExtendedMath
 {
     public static class Functions
     {
+        /// <returns>
+        ///     The Fibonacci number at index factor. Throws ArgumentOutOfRange with negative inputs, and OVerflow if the result is too
+        ///     large for an int
+        /// </returns>
+        /// <remarks>a Fibonacci number is defined as the sum of the previous two Fibonacci numbers, with 0 and 1 returning themselves</remarks>
+        /// <param name="factor">the index of the Fibonacci number to be calculated</param>
         public static int Fibonacci(int factor)
         {
             if (factor < 0)
             {
-                throw new ArgumentOutOfRangeException(
-                    nameof(factor), "Input should be 0 or positive");
+                throw new ArgumentOutOfRangeException(nameof(factor), "Input should be 0 or positive");
             }
 
-            if (factor < 2) { return factor; }
+            if (factor < 2) return factor;
 
             var previousNumber = 1;
             var currentNumber = 1;
@@ -37,4 +42,3 @@ namespace ExtendedMath
         }
     }
 }
-
