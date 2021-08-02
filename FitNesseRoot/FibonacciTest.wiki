@@ -1,8 +1,3 @@
-!path "ExtendedMathTest.dll"
-
-!| import        |
-|ExtendedMathTest|
-
 |Fibonacci Fixture                                                                      |
 |Input Value|Fibonacci?                        |#comment                                |
 |0          |0                                 |by definition                           |

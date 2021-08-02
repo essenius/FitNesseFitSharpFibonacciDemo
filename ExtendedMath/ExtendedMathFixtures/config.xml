@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<suiteConfig>
+  <ApplicationUnderTest>
+    <AddAssembly>ExtendedMathFixtures.dll</AddAssembly>
+    <AddNamespace>ExtendedMathFixtures</AddNamespace>
+  </ApplicationUnderTest>
+  <Settings>
+    <Runner>fitSharp.Slim.Service.Runner</Runner>
+  </Settings>
+</suiteConfig>

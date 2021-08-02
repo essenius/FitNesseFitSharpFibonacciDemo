@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Version>3.0.0</Version>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <AnalysysMode>AllEnabledByDefault</AnalysysMode>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ExtendedMath\ExtendedMath.csproj" />
+    <None Update="config.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
+
+
