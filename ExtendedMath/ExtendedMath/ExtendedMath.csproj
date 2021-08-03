@@ -5,7 +5,10 @@
     <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
     <AnalysysMode>AllEnabledByDefault</AnalysysMode>
     <Version>3.0.0</Version>
-
+    <Authors>Rik Essenius</Authors>
+    <Company />
+    <Copyright>Copyright © Rik Essenius 2013-2021</Copyright>
+    <RepositoryUrl>https://github.com/essenius/FitNesseFitSharpFibonacciDemo</RepositoryUrl>
   </PropertyGroup>
 
 </Project>
