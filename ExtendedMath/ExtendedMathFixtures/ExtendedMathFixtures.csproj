@@ -6,7 +6,7 @@
     <AnalysysMode>AllEnabledByDefault</AnalysysMode>
     <Version>3.0.0</Version>
     <Authors>Rik Essenius</Authors>
-    <Company />
+    <Description>Fixture for the Fibonacci function</Description>
     <Copyright>Copyright © Rik Essenius 2013-2021</Copyright>
     <RepositoryUrl>https://github.com/essenius/FitNesseFitSharpFibonacciDemo</RepositoryUrl>
   </PropertyGroup>
@@ -19,5 +19,3 @@
   </ItemGroup>
 
 </Project>
-
-
