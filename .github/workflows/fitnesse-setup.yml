@@ -6,25 +6,39 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Install wget
-      run: sudo apt install wget
-      
-    - name: Download FitNesse
-      run: wget http://fitnesse.org/fitnesse-standalone.jar?responder=releaseDownload&release=20210606
-      
-    - name: Download nuget
-      run: wget https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
-      
-    - name: Install mono
-      run: sudo apt install mono-complete
-      
-    - name: Install FitSharp
-      run: mono nuget.exe install FitSharp -ExcludeVersion
-      
-    - name: Install PowerShell
-      run: sudo apt-get install -y powershell
-
     - name: Setup .NET SDK
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.x
+        
+    - name: Restore dependencies
+      run: dotnet restore ./ExtendedMath/ExtendedMath.sln
+      
+    - name: Build
+      run: dotnet build ./ExtendedMath/ExtendedMath.sln
+    
+    - name: Install wget
+      run: sudo apt install wget
+   
+    - name: Install mono
+      run: sudo apt install mono-complete
+      
+    - name: Setup and Config FitNesse
+      run: |
+        pwd
+        cd ./ExtendedMath/ExtendedMathFixtures/bin/Debug/net5.0
+        wget http://fitnesse.org/fitnesse-standalone.jar?responder=releaseDownload&release=20210606
+        wget https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
+        mono nuget.exe install FitSharp -ExcludeVersion
+
+    - name: Execute FitNesse
+      run: |
+        pwd
+        ls
+
+    - name: Install PowerShell
+      run: sudo apt-get install -y powershell
+
+   
+      
+   
