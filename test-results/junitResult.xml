@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuites tests="1" failures="0" disabled="0" time="">
-    <testcase name="FibonacciTest" assertions="8" time="0.031" status="Passed" classname="">
-       <failure message="Assertions: 8 right, 0 wrong, 0 ignores, 0 exceptions. "></failure>
-    </testcase>
+	<testsuite tests="1" failures="0" disabled="0" time="">
+		<testcase name="FibonacciTest" assertions="8" time="0.031" status="Passed" classname="">
+			<failure message="Assertions: 8 right, 0 wrong, 0 ignores, 0 exceptions. "></failure>
+		</testcase>
         Raw test results from FitNesse
+	</testsuite>
 </testsuites>
