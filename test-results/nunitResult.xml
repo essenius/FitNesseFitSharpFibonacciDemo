@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<test-run name="FibonacciTest-Run" result="Passed" testcasecount="1" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="8" start-time="2021-09-02T02:12:43.0000000Z" end-time="2021-09-02T02:12:43.2520000Z" engine-version="FitNesse v20210606">
+  <command-line><![CDATA[dotnet C:\Users\luuri\source\repos\FitNesseFitSharpFibonacciDemo\output\FitSharp\lib\net5.0\Runner.dll -c .\config.xml 1]]></command-line>
+  <test-suite type="Assembly" runstate="Runnable" name="FibonacciTest" fullName="FibonacciTest" result="Passed" testcasecount="1" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="8" start-time="2021-09-02T02:12:43.0000000Z" end-time="2021-09-02T02:12:43.2520000Z">
+    <environment />
+    <settings>
+      <setting name="TestSystem" value="slim:dotnet" />
+    </settings>
+    <properties>
+      <property name="exit-code" value="0" />
+    </properties>
+    <failure>
+      <message><![CDATA[Test Pages: 1 right, 0 wrong, 0 ignores, 0 exceptions. Assertions: 8 right, 0 wrong, 0 ignores, 0 exceptions. ]]></message>
+    </failure>
+    <results>
+      <test-case name="FibonacciTest" fullname="FibonacciTest" result="Passed" start-time="2021-09-02T02:12:43.0000000Z" duration="0.031" asserts="8">
+        <failure>
+          <message><![CDATA[Assertions: 8 right, 0 wrong, 0 ignores, 0 exceptions. ]]></message>
+        </failure>
+      </test-case>
+    </results>
+    <attachments>
+      <attachment>
+        <filePath />
+        <description>Raw test results from FitNesse</description>
+      </attachment>
+    </attachments>
+  </test-suite>
+</test-run>
