@@ -1,14 +1,12 @@
-name: FitNesse Setup and Execute
+name: FitNesse Result 
 on: push
 jobs:
-  FitNesse:
+  PublishFitNesseResult:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
 
     - name: Publish Unit Test Results
-      # You may pin to the exact commit or the version.
-      # uses: EnricoMi/publish-unit-test-result-action@95a3aff882d4abe2838b187c66477be7fbf3ddb8
       uses: EnricoMi/publish-unit-test-result-action@v1.19
       with:
         # The created test result check run has failure state if any test fails or test errors occur. Never fails when set to "nothing", fails only on errors when set to "errors". Default is "test failures".
