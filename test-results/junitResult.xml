@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuites tests="1" failures="0" disabled="0" time="">
   
-  
+  <testsuite tests="1" failures="0" disabled="0" time="">
     
     
     
@@ -9,7 +9,7 @@
       <testcase name="FibonacciTest" assertions="8" time="0.016" status="Passed" classname="">
       </testcase>
     
-    
+   </testsuite>
       
         
         Raw test results from FitNesse
