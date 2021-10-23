@@ -59,7 +59,7 @@ This repo contains a demo on how to setup and use FitNesse with FitSharp. It inc
 
 ![Fibonacci Test Results](images/FitNesseFibonacciTest.png "Running your first FitNesse test")
 
-If you see something else (like an amberish line with ```Testing was interrupted and results are incomplete.``` then there is something wrong with the configuration. Check the Execution Log button for clues (although the messages are not always helpful). Causes could be:
+If you see something else (like an amberish line with ```Testing was interrupted and results are incomplete.``` then there is something wrong with the configuration. Check the ```Execution Log``` button for clues (although the messages are not always helpful). Causes could be:
 * Can't find the test runner or one of its dependencies: ensure that the dotnet command is available and that FitSharp is installed in the right folder.
 * Can't find the fixture assemblies: ensure that the build succeeded and that the DLLs exist in the right folder, ensure that FitNesse was started from the right folder.
 * There is a configuration issue in ```plugins.properties```. Note that if you make a change in that file, you need to restart FitNesse to let it pick up the change.
