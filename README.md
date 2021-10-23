@@ -3,8 +3,9 @@ This repo contains a few demo on how to use FitNesse with FitSharp. It include F
 
 # Getting Started
 1. Ensure you have a Java JRE installed (8 or higher, preferably 11)
-2. Download FitNesse (http://fitnesse.org) and copy or move ```fitnesse-standalone.jar``` to ```%LOCALAPPDATA%\FitNesse```
-3. Install FitSharp into ```%LOCALAPPDATA%\FitSharp```. The easiest way to do that is using the NuGet CLI which you can get from from https://dist.nuget.org/win-x86-commandline/latest/nuget.exe:
+2. Create folder ```%LOCALAPPDATA%\FitNesse```
+3. Download FitNesse from http://fitnesse.org/FitNesseDownload and copy or move ```fitnesse-standalone.jar``` to the just created folder ```%LOCALAPPDATA%\FitNesse```
+4. Install FitSharp into ```%LOCALAPPDATA%\FitSharp```. The easiest way to do that is using the NuGet CLI which you can get from from https://dist.nuget.org/win-x86-commandline/latest/nuget.exe:
 ```
     nuget install fitsharp -OutputDirectory %LOCALAPPDATA% -ExcludeVersion
 ```
