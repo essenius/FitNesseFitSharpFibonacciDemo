@@ -20,7 +20,8 @@ This repo contains a few demo on how to use FitNesse with FitSharp. It include F
     cd /D %LOCALAPPDATA%\FitNesse\ExtendedMath\ExtendedMathFixtures\bin\debug\net5.0
     java -jar %LOCALAPPDATA%\FitNesse\fitnesse-standalone.jar -d %LOCALAPPDATA%\FitNesse -e 0
 ```	
-8. Open a browser and enter the URL http://localhost:8080/FibonacciTest?test
+8. The first time FitNesse runs, it will unpack its resources. Wait until you see ```Starting FitNesse on port: 8080``` in the log
+9. Open a browser and enter the URL http://localhost:8080/FibonacciTest?test
 
 # Contribute
 Enter an issue or provide a pull request. 
