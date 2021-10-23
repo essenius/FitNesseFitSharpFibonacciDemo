@@ -17,7 +17,7 @@ This repo contains a few demo on how to use FitNesse with FitSharp. It include F
 ```
 7. Start FitNesse with the root repo folder as the data folder, and the assembly folder as the current directory:
 ```
-    cd /D %LOCALAPPDATA%\ExtendedMath\ExtendedMathFixtures\bin\debug\net5.0
+    cd /D %LOCALAPPDATA%\FitNesse\ExtendedMath\ExtendedMathFixtures\bin\debug\net5.0
     java -jar %LOCALAPPDATA%\FitNesse\fitnesse-standalone.jar -d %LOCALAPPDATA%\FitNesse -e 0
 ```	
 8. Open a browser and enter the URL http://localhost:8080/FibonacciTest?test
