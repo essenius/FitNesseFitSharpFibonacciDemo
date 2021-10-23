@@ -38,5 +38,7 @@ This repo contains a demo on how to use FitNesse with FitSharp. It include a Fit
 1. The first time FitNesse runs, it will unpack its resources. Wait until you see ```Starting FitNesse on port: 8080``` in the log
 1. Open a browser and enter the URL http://localhost:8080/FibonacciTest?test. You should then see a test table with Fibonacci numbers.
 
+![Fibonacci Test Results](images/FitNesseFibonacciTest.png "Running your first FitNesse test")
+
 # Contribute
 Enter an issue or provide a pull request. 
