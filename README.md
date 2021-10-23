@@ -29,9 +29,9 @@ This repo contains a few demo on how to use FitNesse with FitSharp. It include F
 1. Download this repo as a ZIP file (use the ```<> Code``` button in the root of the repo in GitHub) 
 1. Extract the contents of the folder ```FitNesseFitSharpFibonacciDemo``` of the zip file into ```~/Documents/FitNesse```. 
 1. Verify that the file ```plugins.properties``` is in that folder afterwards (this is FitNesse's configuration file).
-1. Add environment variable LOCALAPPDATA: ```echo 'export LOCALAPPDATA="~/Documents"' >> ~/.zshrc``` <br/> (alternatively, change ```plugins.properties``` to make FITSHARP_HOME point to the right folder)
-1. Apply the settings in ./zshrc: ```. ~/.zshrc```
-1. Build the solution ```ExtendedMath```: ```dotnet build ~/Documents/FitNesse/ExtendedMath/ExtendedMath.sln```
+1. Remove or comment out the Windows specific lines in ```plugins.properties```, and uncomment (remove ```#```) the Mac specific ones.
+1. If you installed any applications via brew, start a new terminal window.
+1. Build the fixture solution: ```dotnet build ~/Documents/FitNesse/ExtendedMath/ExtendedMath.sln```
 1. Go to the assembly folder: ```cd ~/Documents/FitNesse/ExtendedMath/ExtendedMathFixtures/bin/debug/net5.0```
 1. Start FitNesse: ```java -jar ~/Documents/FitNesse/fitnesse-standalone.jar -d ~/Documents/FitNesse -e 0```
 7. The first time FitNesse runs, it will unpack its resources. Wait until you see ```Starting FitNesse on port: 8080``` in the log
