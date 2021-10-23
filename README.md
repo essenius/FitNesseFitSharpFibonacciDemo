@@ -1,10 +1,10 @@
 # Introduction 
-This repo contains a demo on how to use FitNesse with FitSharp. It include a FitNesse test page as well as a corresponding C# fixture. 
+This repo contains a demo on how to setup and use FitNesse with FitSharp. It include a FitNesse test page as well as a corresponding C# fixture. 
 
 # Installation and Startup
 
 ## Windows
-1. Ensure you have a Java JRE installed (8 or higher, preferably 11). OpenJDK 11 has been tested and works well.
+1. Ensure you have a Java JRE installed (version 8 or higher, preferably 11). OpenJDK 11 has been tested and works well.
 2. Ensure that Java is in the path.
 3. Create folder for FitNesse: ```mkdir %LOCALAPPDATA%\FitNesse``` 
 4. Download FitNesse from http://fitnesse.org/FitNesseDownload and copy or move ```fitnesse-standalone.jar``` to ```%LOCALAPPDATA%\FitNesse```
@@ -24,7 +24,7 @@ This repo contains a demo on how to use FitNesse with FitSharp. It include a Fit
 1. Create a folder for FitNesse: ```mkdir ~/Documents/FitNesse```
 1. Download FitNesse from  http://fitnesse.org/FitNesseDownload and copy or move ```fitnesse-standalone.jar``` to ```~/Documents/FitNesse```
 1. Install nuget: ``` brew install nuget```
-1. Download FitSharp: ```nuget install fitsharp -OutputDirectory ~/Documents -ExcludeVersion```
+1. Install FitSharp: ```nuget install fitsharp -OutputDirectory ~/Documents -ExcludeVersion```
 1. Download this repo as a ZIP file (use the ```<> Code``` button in the root of the repo in GitHub) 
 1. Extract the contents of the folder ```FitNesseFitSharpFibonacciDemo``` of the zip file into ```~/Documents/FitNesse```. 
 1. Verify that the file ```plugins.properties``` is in that folder afterwards (this is FitNesse's configuration file).
@@ -36,14 +36,33 @@ This repo contains a demo on how to use FitNesse with FitSharp. It include a Fit
 
 ## Validation (for both)
 1. The first time FitNesse runs, it will unpack its resources. Wait until you see ```Starting FitNesse on port: 8080``` in the log
-1. Open a browser and enter the URL http://localhost:8080/FibonacciTest?test. If you then see a test table with Fibonacci numbers, you have configured FitNesse and FitSharp correctly.
+    ```
+    Bootstrapping FitNesse, the fully integrated standalone wiki and acceptance testing framework.
+    root page: fitnesse.wiki.fs.WikiFilePage: FitNesseRoot
+    logger: none
+    authenticator: fitnesse.authentication.PromiscuousAuthenticator
+    page factory: fitnesse.html.template.PageFactory
+    page theme: bootstrap
+    Unpacking new version of FitNesse resources. Please be patient...
+    **********************************************************
+    Files have been updated to a new version.
+    Please read the release notes on
+    http://localhost:8080/FitNesse.ReleaseNotes
+    to find out about the new features and fixes.
+    **********************************************************
+    Starting FitNesse on port: 8080
+    ```
+
+    In case you see something else, validate that Java was correctly installed and that the location of ```fitnesse-standalone.jar``` is correctly specified.
+
+  1. Open a browser and enter the URL http://localhost:8080/FibonacciTest?test. If you then see a test table with Fibonacci numbers, you have configured FitNesse and FitSharp correctly.
 
 ![Fibonacci Test Results](images/FitNesseFibonacciTest.png "Running your first FitNesse test")
 
-If you see something else (like an amberish line with "Testing was interrupted and results are incomplete." then there is something wrong with the configuration. Check the Execution Log button for clues. Causes could be:
+If you see something else (like an amberish line with "Testing was interrupted and results are incomplete." then there is something wrong with the configuration. Check the Execution Log button for clues (although the messages are not always helpful). Causes could be:
 * Can't find the test runner or one of its dependencies: ensure that the dotnet command is available and that FitSharp is installed in the right folder.
 * Can't find the fixture assemblies: ensure that the build succeeded and that the DLLs exist in the right folder, ensure that FitNesse was started from the right folder.
-* There is a configuration issue in plugins.properties. Note that if you make a change in that file, you need to restart FitNesse to let it pick up the change.
+* There is a configuration issue in ```plugins.properties```. Note that if you make a change in that file, you need to restart FitNesse to let it pick up the change.
 
 # Contribute
 Enter an issue or provide a pull request. 
