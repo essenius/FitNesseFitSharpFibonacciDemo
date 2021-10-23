@@ -9,7 +9,7 @@ This repo contains a few demo on how to use FitNesse with FitSharp. It include F
 3. Download FitNesse from http://fitnesse.org/FitNesseDownload and copy or move ```fitnesse-standalone.jar``` to the just created folder ```%LOCALAPPDATA%\FitNesse```
 4. If you don't have the NuGet CLI already, get it from https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
 5. Install FitSharp: ```nuget install fitsharp -OutputDirectory %LOCALAPPDATA% -ExcludeVersion```
-6. Download the repo as a zip file (use the ```<> Code``` button in the root of the repo in GitHub)
+6. Download this repo as a zip file (use the ```<> Code``` button in the root of the repo in GitHub)
 7. Extract the contents of the folder ```FitNesseFitSharpFibonacciDemo``` of the zip file into ```%LOCALAPPDATA%\FitNesse```. 
 8. Verify that the file ```plugins.properties``` is in that folder afterwards (this is FitNesse's configuration file).
 9. Build the solution ```ExtendedMath```: ```dotnet build %LOCALAPPDATA%\FitNesse\ExtendedMath\ExtendedMath.sln```
@@ -26,7 +26,7 @@ This repo contains a few demo on how to use FitNesse with FitSharp. It include F
 5. Download FitNesse from  http://fitnesse.org/FitNesseDownload and copy or move ```fitnesse-standalone.jar``` to the just created folder ```~/Documents/FitNesse```
 6. Install nuget: ``` brew install nuget```
 6. Download FitSharp: ```nuget install fitsharp -OutputDirectory ~/Documents -ExcludeVersion```
-9. Download the repo as a ZIP file (use the ```<> Code``` button in the root of the repo in GitHub) 
+9. Download this repo as a ZIP file (use the ```<> Code``` button in the root of the repo in GitHub) 
 10. Extract the contents of the folder ```FitNesseFitSharpFibonacciDemo``` of the zip file into ```~/Documents/FitNesse```. 
 11. Verify that the file ```plugins.properties``` is in that folder afterwards (this is FitNesse's configuration file).
 12. Add environment variable LOCALAPPDATA: ```echo 'export LOCALAPPDATA="~/Documents"' >> ~/.zshrc``` (alternatively, change ```plugins.properties``` to make FITSHARP_HOME point to the right folder)
