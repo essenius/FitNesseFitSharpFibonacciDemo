@@ -28,6 +28,8 @@ This repo contains a few demo on how to use FitNesse with FitSharp. It include F
 ## Mac
 1. Install [HomeBrew](https://brew.sh). This might require administrative privileges.
 2. Install a Java JRE (preferably 11) if you don't have one already: ```brew install java11```
-3. Install nuget: ``` brew install nuget```
+3. add Java to the path: ```echo 'export PATH="/usr/local/opt/openjdk/bin:$PATH"' >> ~/.zshrc```
+4. Install nuget: ``` brew install nuget```
+
 # Contribute
 Enter an issue or provide a pull request. 
