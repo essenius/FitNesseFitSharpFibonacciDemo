@@ -9,7 +9,7 @@ This repo contains a few demo on how to use FitNesse with FitSharp. It include F
 ```
     nuget install fitsharp -OutputDirectory %LOCALAPPDATA% -ExcludeVersion
 ```
-4. Download the repo as a ZIP file (use the ```Code``` button in the root of the repo) and extract the contents of the folder ```FitNesseFitSharpFibonacciDemo``` into ```%LOCALAPPDATA%\FitNesse```
+4. Download the repo as a ZIP file (use the ```<> Code``` button in the root of the repo) and extract the contents of the folder ```FitNesseFitSharpFibonacciDemo``` into ```%LOCALAPPDATA%\FitNesse```
 5. If you took a different folder for FitSharp, update ```plugins.properties``` accordingly.
 6. Build the solution ```ExtendedMath```:
 ```
