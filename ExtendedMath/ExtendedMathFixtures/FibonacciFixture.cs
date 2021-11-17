@@ -15,10 +15,15 @@ using ExtendedMath;
 [assembly: CLSCompliant(true)]
 namespace ExtendedMathFixtures
 {
+    /// <summary>Demo fixture for a decision table</summary>
     public class FibonacciFixture
     {
+        /// <summary>Input parameter for Fibonacci function</summary>
         public int InputValue { get; set; }
 
+
+        /// <summary>Call Fibonacci function</summary>
+        /// <returns>result, or type of exception</returns>
         public object Fibonacci()
         {
             try
