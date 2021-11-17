@@ -74,4 +74,4 @@ Causes could be:
 * There is a configuration issue in `plugins.properties`. Note that if you make a change in that file, you need to restart FitNesse to let it pick up the change.
 
 # Contribute
-Enter an issue or provide a pull request. 
+Enter an [issue](issues) or provide a pull request. 
