@@ -13,12 +13,12 @@ This repo contains a demo on how to setup and use FitNesse with FitSharp. It inc
  7. Download this repo as a zip file (use the `<> Code` button in the root of the repo in GitHub)
  8. Extract the contents of the folder `FitNesseFitSharpFibonacciDemo` of the zip file into `%LOCALAPPDATA%\FitNesse`. 
  9. Verify that the file `plugins.properties` is in that folder afterwards (this is FitNesse's configuration file).
- 10. If you have a .NET SDK installed, build the solution:
+ 10. If you have a .NET 5 SDK installed, build the solution:
      1. Go to the solution folder : `cd /D %LOCALAPPDATA%\FitNesse\ExtendedMath`
      2. Build the fixture solution: `dotnet build --configuration release ExtendedMath.sln`
      3. Go to the fixture folder: `cd ExtendedMathFixtures`
      4. Publish the fixture including potential dependencies:<br/>`dotnet publish ExtendedMathFixtures.csproj --output bin\Deploy\net5.0 --framework net5.0 --configuration release`
- 11. If you don't have .NET SDK, download `ExtendedMathFixtures.zip` from the latest [Release](../../releases) and extract it into the `ExtendedMathFixtures` folder. It should create the folder tree `bin\Deploy\net5.0` with the DLLs and some other files in there.
+ 11. If you don't have .NET 5 SDK, download `ExtendedMathFixtures.zip` from the latest [Release](../../releases) and extract it into the `ExtendedMathFixtures` folder. It should create the folder tree `bin\Deploy\net5.0` with the DLLs and some other files in there.
  12. Go to the fixture assembly folder: `cd bin\Deploy\net5.0`
  13. Start FitNesse: `java -jar %LOCALAPPDATA%\FitNesse\fitnesse-standalone.jar -d %LOCALAPPDATA%\FitNesse -e 0`	
 
