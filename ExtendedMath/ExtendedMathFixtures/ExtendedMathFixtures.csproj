@@ -9,6 +9,7 @@
     <Description>Fixture for the Fibonacci function</Description>
     <Copyright>Copyright © Rik Essenius 2013-2021</Copyright>
     <RepositoryUrl>https://github.com/essenius/FitNesseFitSharpFibonacciDemo</RepositoryUrl>
+    <DocumentationFile>ExtendedMathFixtures.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
