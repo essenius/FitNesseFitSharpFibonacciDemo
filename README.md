@@ -5,7 +5,7 @@ This repo contains a demo on how to setup and use FitNesse with FitSharp. It inc
 
 ## Windows
  1. Ensure you have a Java JRE installed (version 8 or higher, preferably 11). OpenJDK 11 has been tested and works well.
- 3. Ensure that you have either the [.NET 5 SDK or the .NET 5 runtime](https://dotnet.microsoft.com/download/dotnet/5.0) installed (check by typing dotnet in a command prompt). If you want the SDK you need admin privileges, for the runtime that isn't necessary if you use the binaries (not the installer). Note that you need the plain .NET Runtime (not the Desktop Runtime or the ASP.NET Core runtime).
+ 3. Ensure that you have either the [.NET 5 SDK or the .NET 5 runtime](https://dotnet.microsoft.com/download/dotnet/5.0) installed (check by typing `dotnet` in a command prompt). If you want the SDK you need admin privileges, for the runtime that isn't necessary if you use the binaries (not the installer). Note that you need the plain .NET Runtime (not the Desktop Runtime or the ASP.NET Core runtime).
  4. Ensure that both Java and dotnet are in the path.
  5. Create folder for FitNesse: `mkdir %LOCALAPPDATA%\FitNesse` 
  6. Download FitNesse from http://fitnesse.org/FitNesseDownload and copy or move `fitnesse-standalone.jar` to `%LOCALAPPDATA%\FitNesse`
@@ -69,13 +69,9 @@ This repo contains a demo on how to setup and use FitNesse with FitSharp. It inc
 ![Fibonacci Test Results](images/FitNesseFibonacciTest.png "Running your first FitNesse test")
 
 ## Troubleshooting
-If you see something else (like an amberish line with ```Testing was interrupted and results are incomplete.``` then there is something wrong with the configuration. Check the `Execution Log` button for clues (although the messages are not always helpful). 
+Check the [Troubleshooting page](wiki/4-Troubleshooting) in the Wiki.
 
-Causes could be:
-* Can't find the test runner or one of its dependencies: ensure that the dotnet command is available and that FitSharp is installed in the right folder.
-* Can't find the fixture assemblies: ensure that the build succeeded and that the DLLs exist in the right folder, ensure that FitNesse was started from the right folder, ensure that `config.xml` file points to the correct assemblies.
-* There is a configuration issue in `plugins.properties`. Note that if you make a change in that file, you need to restart FitNesse to let it pick up the change.
-
+If you see something else (like an amberish line with ```Testing was interrupted and results are incomplet
 # More information
 See the [Wiki](../../wiki).
 
