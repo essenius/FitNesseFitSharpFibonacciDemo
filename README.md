@@ -71,7 +71,6 @@ This repo contains a demo on how to setup and use FitNesse with FitSharp. It inc
 ## Troubleshooting
 Check the [Troubleshooting page](../../wiki/A-Troubleshooting) in the Wiki.
 
-If you see something else (like an amberish line with ```Testing was interrupted and results are incomplet
 # More information
 See the [Wiki](../../wiki).
 
