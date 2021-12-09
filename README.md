@@ -12,8 +12,8 @@ This repo contains a demo on how to setup and use FitNesse with FitSharp. It inc
  7. If you don't have the NuGet CLI already, get it from https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
  8. Install FitSharp: `nuget install fitsharp -OutputDirectory %LOCALAPPDATA% -ExcludeVersion`
  9. Download this repo as a zip file (use the `<> Code` button in the root of the repo in GitHub)
- 10. Extract the contents of the folder `FitNesseFitSharpFibonacciDemo` of the zip file into `%LOCALAPPDATA%\FitNesse`. 
- 11. Verify that the file `plugins.properties` is in that folder afterwards (this is FitNesse's configuration file).
+ 10. Extract the contents of the folder `FitNesseFitSharpFibonacciDemo-master` of the zip file into `%LOCALAPPDATA%\FitNesse`. Do not include the folder itself. 
+ 11. Verify that the file `plugins.properties` is in the folder `%LOCALAPPDATA%\FitNesse` afterwards (this is FitNesse's configuration file).
  12. If you have a .NET 5 SDK installed, build the solution:
      1. Go to the solution folder : `cd /D %LOCALAPPDATA%\FitNesse\ExtendedMath`
      2. Build the fixture solution: `dotnet build --configuration release ExtendedMath.sln`
