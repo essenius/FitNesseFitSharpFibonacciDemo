@@ -5,7 +5,7 @@ This repo contains a demo on how to setup and use FitNesse with FitSharp. It inc
 
 ## Windows
  1. Ensure you have a Java JRE installed (version 8 or higher, preferably 11). OpenJDK 11 has been tested and works well.
- 3. Ensure that you have either the [.NET 5 SDK or the .NET 5 runtime](https://dotnet.microsoft.com/download/dotnet/5.0) installed (check by typing `dotnet` in a command prompt). If you want the SDK you need admin privileges, for the runtime that isn't necessary if you use the binaries (not the installer). Note that you need the plain .NET Runtime (not the Desktop Runtime or the ASP.NET Core runtime).
+ 3. Ensure that you have either the [.NET 6 SDK or the .NET 6 runtime](https://dotnet.microsoft.com/download/dotnet/6.0) installed (check by typing `dotnet` in a command prompt). If you want the SDK you need admin privileges, for the runtime that isn't necessary if you use the binaries (not the installer). Note that you need the plain .NET Runtime (not the Desktop Runtime or the ASP.NET Core runtime).
  4. Ensure that both Java and dotnet are in the path.
  5. Create folder for FitNesse: `mkdir %LOCALAPPDATA%\FitNesse` 
  6. Download FitNesse from http://fitnesse.org/FitNesseDownload and copy or move `fitnesse-standalone.jar` to `%LOCALAPPDATA%\FitNesse`
@@ -14,13 +14,13 @@ This repo contains a demo on how to setup and use FitNesse with FitSharp. It inc
  9. Download this repo as a zip file (use the `<> Code` button in the root of the repo in GitHub)
  10. Extract the contents (not the folder itself) of `FitNesseFitSharpFibonacciDemo-master` of the zip file into `%LOCALAPPDATA%\FitNesse`.  
  11. Verify that the file `plugins.properties` is in the folder `%LOCALAPPDATA%\FitNesse` afterwards (this is FitNesse's configuration file).
- 12. If you have a .NET 5 SDK installed, build the solution:
+ 12. If you have a .NET 6 SDK installed, build the solution:
      1. Go to the solution folder : `cd /D %LOCALAPPDATA%\FitNesse\ExtendedMath`
      2. Build the fixture solution: `dotnet build --configuration release ExtendedMath.sln`
      3. Go to the fixture folder: `cd ExtendedMathFixtures`
-     4. Publish the fixture including potential dependencies:<br/>`dotnet publish ExtendedMathFixtures.csproj --output bin\Deploy\net5.0 --framework net5.0 --configuration release`
- 13. If you don't have .NET 5 SDK, download `ExtendedMathFixtures.zip` from the latest [Release](../../releases) and extract it into the `ExtendedMathFixtures` folder. It should create the folder tree `bin\Deploy\net5.0` with the DLLs and some other files in there.
- 14. Go to the fixture assembly folder: `cd bin\Deploy\net5.0`
+     4. Publish the fixture including potential dependencies:<br/>`dotnet publish ExtendedMathFixtures.csproj --output bin\Deploy\net6.0 --framework net6.0 --configuration release`
+ 13. If you don't have .NET 6 SDK, download `ExtendedMathFixtures.zip` from the latest [Release](../../releases) and extract it into the `ExtendedMathFixtures` folder. It should create the folder tree `bin\Deploy\net6.0` with the DLLs and some other files in there.
+ 14. Go to the fixture assembly folder: `cd bin\Deploy\net6.0`
  15. Start FitNesse: `java -jar %LOCALAPPDATA%\FitNesse\fitnesse-standalone.jar -d %LOCALAPPDATA%\FitNesse -e 0`	
 
 ## Mac
@@ -39,8 +39,8 @@ This repo contains a demo on how to setup and use FitNesse with FitSharp. It inc
 1. Go to the solution folder : `cd ~/Documents/FitNesse/ExtendedMath`
 1. Build the fixture solution: `dotnet build --configuration release ExtendedMath.sln`
 1. Go to the fixture folder: `cd ExtendedMathFixtures`
-1. Publish the fixture including potential dependencies: `dotnet publish ExtendedMathFixtures.csproj --output bin/Deploy/net5.0 --framework net5.0 --configuration release`
-1. Go to the fixture assembly folder: `cd bin/Deploy/net5.0`
+1. Publish the fixture including potential dependencies: `dotnet publish ExtendedMathFixtures.csproj --output bin/Deploy/net6.0 --framework net6.0 --configuration release`
+1. Go to the fixture assembly folder: `cd bin/Deploy/net6.0`
 1. Start FitNesse: `java -jar ~/Documents/FitNesse/fitnesse-standalone.jar -d ~/Documents/FitNesse -e 0`
 
 ## Validation (for both)
