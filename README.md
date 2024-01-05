@@ -4,7 +4,7 @@ This repo contains a demo on how to setup and use FitNesse with FitSharp. It inc
 # Installation and Startup
 
 ## Windows
- 1. Ensure you have a Java JRE installed (version 8 or higher, preferably 11). OpenJDK 11 has been tested and works well.
+ 1. Ensure you have a Java JRE installed (version 8 or higher, preferably 11). OpenJDK 11 has been tested and works well. There is an [issue with more recent versions of Java (17+)](java-security-manager-issue.md).
  3. Ensure that you have either the [.NET 6 SDK or the .NET 6 runtime](https://dotnet.microsoft.com/download/dotnet/6.0) installed (check by typing `dotnet` in a command prompt). If you want the SDK you need admin privileges, for the runtime that isn't necessary if you use the binaries (not the installer). Note that you need the plain .NET Runtime (not the Desktop Runtime or the ASP.NET Core runtime).
  4. Ensure that both Java and dotnet are in the path.
  5. Create folder for FitNesse: `mkdir %LOCALAPPDATA%\FitNesse` 
