@@ -1,3 +1,5 @@
+# Fibonaci Demo ![workflow badge](actions/workflows/fibonacci-demo.yml/badge.svg)
+
 # Introduction 
 This repo contains a demo on how to setup and use FitNesse with FitSharp. It include a FitNesse test page as well as a corresponding C# fixture. 
 
