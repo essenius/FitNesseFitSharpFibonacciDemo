@@ -1,10 +1,12 @@
-# Introduction 
+# Fibonacci Demo ![workflow badge](../../actions/workflows/ci.yml/badge.svg)
+
+## Introduction 
 This repo contains a demo on how to setup and use FitNesse with FitSharp. It include a FitNesse test page as well as a corresponding C# fixture. 
 
-# Installation and Startup
+## Installation and Startup
 
-## Windows
- 1. Ensure you have a Java JRE installed (version 8 or higher, preferably 11). OpenJDK 11 has been tested and works well.
+### Windows
+ 1. Ensure you have a Java JRE installed (version 8 or higher, preferably 11). OpenJDK 11 has been tested and works well. There is an [issue with more recent versions of Java (17+)](java-security-manager-issue.md).
  3. Ensure that you have either the [.NET 6 SDK or the .NET 6 runtime](https://dotnet.microsoft.com/download/dotnet/6.0) installed (check by typing `dotnet` in a command prompt). If you want the SDK you need admin privileges, for the runtime that isn't necessary if you use the binaries (not the installer). Note that you need the plain .NET Runtime (not the Desktop Runtime or the ASP.NET Core runtime).
  4. Ensure that both Java and dotnet are in the path.
  5. Create folder for FitNesse: `mkdir %LOCALAPPDATA%\FitNesse` 
@@ -23,7 +25,7 @@ This repo contains a demo on how to setup and use FitNesse with FitSharp. It inc
  14. Go to the fixture assembly folder: `cd bin\Deploy\net6.0`
  15. Start FitNesse: `java -jar %LOCALAPPDATA%\FitNesse\fitnesse-standalone.jar -d %LOCALAPPDATA%\FitNesse -e 0`	
 
-## Mac
+### Mac
 1. Install [HomeBrew](https://brew.sh). This might require administrative privileges.
 1. Install a Java JRE (preferably 11) if you don't have one already: `brew install java11`
 1. Add Java to the path: `echo 'export PATH="/usr/local/opt/openjdk@11/bin:$PATH"' >> ~/.zshrc`
@@ -43,7 +45,7 @@ This repo contains a demo on how to setup and use FitNesse with FitSharp. It inc
 1. Go to the fixture assembly folder: `cd bin/Deploy/net6.0`
 1. Start FitNesse: `java -jar ~/Documents/FitNesse/fitnesse-standalone.jar -d ~/Documents/FitNesse -e 0`
 
-## Validation (for both)
+### Validation (for both)
 1. The first time FitNesse runs, it will unpack its resources. Wait until you see `Starting FitNesse on port: 8080` in the log
     ```
     Bootstrapping FitNesse, the fully integrated standalone wiki and acceptance testing framework.
@@ -68,11 +70,11 @@ This repo contains a demo on how to setup and use FitNesse with FitSharp. It inc
 
 ![Fibonacci Test Results](images/FitNesseFibonacciTest.png "Running your first FitNesse test")
 
-## Troubleshooting
+### Troubleshooting
 Check the [Troubleshooting page](../../wiki/A-Troubleshooting) in the Wiki.
 
-# More information
+## More information
 See the [Wiki](../../wiki).
 
-# Contribute
+## Contribute
 Enter an [issue](../../issues) or provide a pull request. 
