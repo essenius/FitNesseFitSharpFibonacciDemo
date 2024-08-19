@@ -13,28 +13,26 @@ using System;
 using ExtendedMath;
 
 [assembly: CLSCompliant(true)]
-namespace ExtendedMathFixtures
+namespace ExtendedMathFixtures;
+
+/// <summary>Demo fixture for a decision table</summary>
+public class FibonacciFixture
 {
-    /// <summary>Demo fixture for a decision table</summary>
-    public class FibonacciFixture
+    /// <summary>Input parameter for Fibonacci function</summary>
+    public int InputValue { get; set; }
+
+
+    /// <summary>Call Fibonacci function</summary>
+    /// <returns>result, or type of exception</returns>
+    public object Fibonacci()
     {
-        /// <summary>Input parameter for Fibonacci function</summary>
-        public int InputValue { get; set; }
-
-
-        /// <summary>Call Fibonacci function</summary>
-        /// <returns>result, or type of exception</returns>
-        public object Fibonacci()
+        try
         {
-            try
-            {
-                return Functions.Fibonacci(InputValue);
-            }
-            catch (Exception e)
-            {
-                return e.GetType();
-            }
+            return Functions.Fibonacci(InputValue);
+        }
+        catch (Exception e)
+        {
+            return e.GetType();
         }
     }
 }
-
