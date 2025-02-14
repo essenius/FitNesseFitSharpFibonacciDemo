@@ -7,7 +7,7 @@ This repo contains a demo on how to setup and use FitNesse with FitSharp. It inc
 
 ### Windows
  1. Ensure you have a Java JRE installed (version 8 or higher, preferably 11). OpenJDK 11 has been tested and works well. There is an [issue with more recent versions of Java (17+)](java-security-manager-issue.md).
- 3. Ensure that you have either the [.NET 8 SDK or the .NET 8 runtime](https://dotnet.microsoft.com/download/dotnet/6.0) installed (check by typing `dotnet` in a command prompt). If you want the SDK you need admin privileges, for the runtime that isn't necessary if you use the binaries (not the installer). Note that you need the plain .NET Runtime (not the Desktop Runtime or the ASP.NET Core runtime).
+ 3. Ensure that you have either the [.NET 8 SDK or the .NET 8 runtime](https://dotnet.microsoft.com/download/dotnet/8.0) installed (check by typing `dotnet` in a command prompt). If you want the SDK you need admin privileges, for the runtime that isn't necessary if you use the binaries (not the installer). Note that you need the plain .NET Runtime (not the Desktop Runtime or the ASP.NET Core runtime).
  4. Ensure that both Java and dotnet are in the path.
  5. Create folder for FitNesse: `mkdir %LOCALAPPDATA%\FitNesse` 
  6. Download FitNesse from http://fitnesse.org/FitNesseDownload and copy or move `fitnesse-standalone.jar` to `%LOCALAPPDATA%\FitNesse`
@@ -21,7 +21,7 @@ This repo contains a demo on how to setup and use FitNesse with FitSharp. It inc
      2. Build the fixture solution: `dotnet build --configuration release ExtendedMath.sln`
      3. Go to the fixture folder: `cd ExtendedMathFixtures`
      4. Publish the fixture including potential dependencies:<br/>`dotnet publish ExtendedMathFixtures.csproj --output bin\Deploy\net8.0 --framework net8.0 --configuration release`
- 13. If you don't have .NET 8 SDK, download `ExtendedMathFixtures.zip` from the latest [Release](../../releases) and extract it into the `ExtendedMathFixtures` folder. It should create the folder tree `bin\Deploy\net6.0` with the DLLs and some other files in there.
+ 13. If you don't have .NET 8 SDK, download `ExtendedMathFixtures.zip` from the latest [Release](../../releases) and extract it into the `ExtendedMathFixtures` folder. It should create the folder tree `bin\Deploy\net8.0` with the DLLs and some other files in there.
  14. Go to the fixture assembly folder: `cd bin\Deploy\net8.0`
  15. Start FitNesse: `java -jar %LOCALAPPDATA%\FitNesse\fitnesse-standalone.jar -d %LOCALAPPDATA%\FitNesse -e 0`	
 
