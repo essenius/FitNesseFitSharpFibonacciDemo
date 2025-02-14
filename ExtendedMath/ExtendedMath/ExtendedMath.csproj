@@ -4,10 +4,10 @@
     <TargetFramework>net8.0</TargetFramework>
     <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
     <AnalysisMode>AllEnabledByDefault</AnalysisMode>
-    <Version>3.1.1</Version>
+    <Version>3.2.0</Version>
     <Authors>Rik Essenius</Authors>
     <Description>Fibonacci function to be used as simple Fitnesse demo</Description>
-    <Copyright>Copyright © Rik Essenius 2013-2024</Copyright>
+    <Copyright>Copyright © Rik Essenius 2013-2025</Copyright>
     <RepositoryUrl>https://github.com/essenius/FitNesseFitSharpFibonacciDemo</RepositoryUrl>
   </PropertyGroup>
 
